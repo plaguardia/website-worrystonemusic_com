@@ -1,0 +1,108 @@
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+.leftWindow{
+    overflow: hidden;
+    width:40%;
+    text-align: center; 
+    margin: 0;
+    height: 100%;
+  }
+  
+.leftWindow img{
+    margin: 0;
+    width: 45%;
+    /*max-height: 20%;
+    background-color: rgba(0, 0, 0, 0.2);*/
+  }
+  
+.leftWindow p {
+    margin: 0;
+    color: antiquewhite;
+    font-size: 15px;
+    padding-bottom: 10px;
+    /*max-height: 40%;*/
+  }
+  
+.blackBox{
+    display: inline-block;
+    margin: 0;
+    height: 100%;
+    padding-left: 5%;
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+.bg {
+    /* The image used */
+    background-image: url(images/Background.jpg);
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+.lg-view{
+     display:inline-block;
+  }
+  
+.sm-view{
+     display:none;
+  }
+  
+/*VIDEO CSS Start*/
+.video-container {
+      position:relative;
+      width:90%;
+      margin: 0 auto;
+      padding-bottom:50%;
+      padding-top:30px;
+      /*height:0;*/
+    max-height: 40%;
+    overflow:hidden;
+      /*margin-bottom: 25px;*/
+  }
+  
+  .video-container iframe, .video-container object, .video-container embed {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+  }
+  /*VIDEO CSS End*/
+  
+@media screen and (max-width: 1000px) {
+    .lg-view{
+         display:none;
+      }
+  
+    .sm-view{
+         display:inline-block;
+      }
+  
+    .bg{
+        background-image: url(images/mBackground.png);
+      }
+  
+    .leftWindow p {
+        font-size: 18px;
+      }
+  
+    .video-container {
+        position: absolute;
+        width: 85%;
+        bottom: 5px;
+        margin: 5%;
+      }
+  
+    .blackBox{
+        background-color: rgba(0, 0, 0, 0.01);
+      }
+  }
